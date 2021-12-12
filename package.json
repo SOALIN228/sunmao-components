@@ -1,21 +1,24 @@
 {
   "name": "sunmao-components",
-  "version": "0.1.0",
-  "private": true,
-  "main": "dist/lego-bricks.umd.js",
-  "module": "dist/lego-bricks.esm.js",
+  "author": "soalin",
+  "version": "0.4.0",
+  "private": false,
+  "main": "dist/sunmao-components.umd.js",
+  "module": "dist/sunmao-components.esm.js",
   "files": [
     "dist"
   ],
   "types": "dist/index.d.ts",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "test:watch": "vue-cli-service test:unit --watch",
     "test": "vue-cli-service test:unit",
+    "test:watch": "vue-cli-service test:unit --watch",
+    "lint": "vue-cli-service lint --max-warnings 5",
     "build": "npm run clean && npm run build:esm && npm run build:umd",
     "build:esm": "rollup --config build/rollup.esm.config.js",
     "build:umd": "rollup --config build/rollup.umd.config.js",
-    "clean": "rimraf ./dist"
+    "clean": "rimraf ./dist",
+    "prepublishOnly": "npm run lint && npm run test&& npm run build"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -23,15 +26,18 @@
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.6",
+    "@types/jest": "^24.0.19",
     "@types/lodash-es": "^4.17.5",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "^4.5.15",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
+    "@vue/test-utils": "^2.0.0-0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
     "less": "^3.0.4",
@@ -42,9 +48,21 @@
     "rollup-plugin-typescript2": "^0.31.1",
     "rollup-plugin-vue": "^6.0.0",
     "typescript": "~4.1.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-jest": "^5.0.0-0"
   },
   "peerDependencies": {
     "vue": "^3.0.0"
+  },
+  "homepage": "https://github.com/SOALIN228/sunmao-components",
+  "keywords": [
+    "Component",
+    "UI",
+    "Vue3"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SOALIN228/sunmao-components"
   }
 }
