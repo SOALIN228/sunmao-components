@@ -1,7 +1,7 @@
 {
   "name": "sunmao-components",
   "author": "soalin",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "private": false,
   "main": "dist/sunmao-components.umd.js",
   "module": "dist/sunmao-components.esm.js",

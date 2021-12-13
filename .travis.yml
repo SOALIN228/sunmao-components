@@ -1,3 +1,11 @@
 language: node_js
 node_js:
   - node
+deploy:
+  provider: npm
+  email: soalin228@163.com
+  skip_cleanup: true
+  api_key:
+    secure: OGOBGafvDLOAfTUfYlOtvhmLfA9Df69Xz/YguTc1jVAVvbkAEBq9CV0A2D4Cpw5YoqCdpvM/jNW6bwIRo9nAvtfQ5xK/qi4EmuCVVa+StpBweD/svf7LBAkWrLe3a47rfOjA4k2VWDjVXNgoJFMLjQf509EJYNVq4HXzdGs9v3rwlOTtKHxm478XgQrHLRQIF24N2pxcbQcK9aO/TQmpHEt9OpNDJLUG1hXsEe+/Ql6e6q9ucKNpo2hDff6jX86FsSweLv5vWbUh9L8+2ZJQKFULT6eeT0LTJg4vAolBuDPqWhOjjLZRSHN2AERGot68e97uwAh1Wf7PEqHEpToJt2eg2jZ0YoZ1OO0tv3Gmbge51/mltNyHb+TJhKRwE82dhcb03MeDgiggpOual/CoXICScWKHGs1OfGKHcmwgUish/gYLuG+Z9q3fhQ0pvypbm5sRAMrEYGqlHiA6prxhfqIMh+DuohpA93EM8DU4cGNmwYaFRO5dDAflxcOfxtHQHfXzlfCWtzrxjwdEyktrgX23l4aSUitcOYuHHh6mr24bxNld23zjPhXpxflWhWP8KpTSxQczrsUVNAAiVq6WkyuqICN7O81eMnSmJzlxZaAjLFpVillPlt5mpGX0rsKveiQ7QPQmZI0jVLDqPpnint7HRpZRKaPN1QKf3sNSS+g=
+  on:
+    tags: true
