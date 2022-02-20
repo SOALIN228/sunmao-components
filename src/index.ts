@@ -5,9 +5,11 @@ export {
 } from './defaultProps'
 
 import LText from '@/components/LText'
+import FinalPage from '@/components/FinalPage'
 
 const components = [
   LText,
+  FinalPage,
 ]
 
 const install = (app: App) => {
@@ -17,9 +19,11 @@ const install = (app: App) => {
 }
 
 export {
-  LText,
   install,
+  LText,
+  FinalPage,
 }
+
 export default {
   install,
 }
