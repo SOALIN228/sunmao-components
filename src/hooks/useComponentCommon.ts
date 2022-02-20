@@ -1,5 +1,5 @@
 import { computed } from 'vue'
-import { pick } from 'lodash-es'
+import { pick } from 'lodash'
 import { CommonComponentProps } from '@/defaultProps'
 
 const useComponentCommon = (props: Readonly<Partial<CommonComponentProps & { isEditing: boolean }>>, picks: string[]) => {

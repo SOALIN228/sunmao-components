@@ -1,4 +1,4 @@
-import { mapValues, without } from 'lodash-es'
+import { mapValues, without } from 'lodash'
 
 export interface CommonComponentProps {
   // actions

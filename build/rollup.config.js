@@ -24,5 +24,5 @@ export default {
     vue(),
     css({ output: 'bundle.css' })
   ],
-  external: ['vue', 'lodash-es']
+  external: ['vue', 'lodash']
 }

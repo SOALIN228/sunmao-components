@@ -9,7 +9,7 @@ export default {
     // 设置依赖的全局变量名称
     globals: {
       'vue': 'Vue',
-      'lodash-es': '_'
+      'lodash': '_'
     },
     // 设置类库导出时，umd全局变量名称，取name属性
     exports: 'named'
