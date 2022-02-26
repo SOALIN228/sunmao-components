@@ -22,7 +22,7 @@ export default {
     nodeResolve(),
     typescript({ tsconfigOverride: overrides }),
     vue(),
-    css({ output: 'bundle.css' })
+    css({ output: `${name}.css` })
   ],
   external: ['vue', 'lodash']
 }
